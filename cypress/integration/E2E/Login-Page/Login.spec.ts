@@ -5,11 +5,12 @@ describe('Visit The Login Page and Find elementos to automation like: Texts, ima
     });
     it('Shoul validate cookie: | Texts | buttons | Links', () => {
         
+
         // Police Title
-        cy.get('#onetrust-policy-title').should('have.text', Cypress.env('cookies').police_title)
+        cy.get('#onetrust-policy-title').should('have.text', process.env.NODE_ENV == 'dev' ?  Cypress.env('cookies').POLICE_TITLE : process.env.POLICE_TITLE)
         
         // Police Text
-        cy.get('#onetrust-policy-text').contains("We use our own and third-party cookies to show you more relevant content based on your browsing and navigation history. Please accept or manage your cookie settings below. Here's our ")
+        cy.get('#onetrust-policy-text').contains( process.env.NODE_ENV == 'dev' ? Cypress.env('cookies').POLICE_TEXT: process.env.POLICE_TEXT)
         
         // Cookie Police Link 
         cy.get('#onetrust-policy-text > a').should('be.visible')
@@ -73,8 +74,6 @@ it('Validate all: | Buttons |  texts | placeholders | Labels | Images | ... |  A
     // Log in with SSO
     cy.get('.sso-button-container > a').should('be.visible')
 });
-
-
     
 });
 
