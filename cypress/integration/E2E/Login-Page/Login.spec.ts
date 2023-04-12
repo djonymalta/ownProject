@@ -7,10 +7,9 @@ describe('Visit The Login Page and Find elementos to automation like: Texts, ima
         
 
         // Police Title
-        cy.get('#onetrust-policy-title').should('have.text', process.env.NODE_ENV == 'dev' ?  Cypress.env('cookies').POLICE_TITLE : process.env.POLICE_TITLE)
-        
+        cy.get('#onetrust-policy-title').should('have.text', Cypress.env('cookies').POLICY_TITLE)        
         // Police Text
-        cy.get('#onetrust-policy-text').contains( process.env.NODE_ENV == 'dev' ? Cypress.env('cookies').POLICE_TEXT: process.env.POLICE_TEXT)
+        cy.get('#onetrust-policy-text').contains(Cypress.env('cookies').POLICY_TEXT)
         
         // Cookie Police Link 
         cy.get('#onetrust-policy-text > a').should('be.visible')
