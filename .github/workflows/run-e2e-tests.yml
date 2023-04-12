@@ -15,7 +15,7 @@ jobs:
           cache: 'npm'
       
       - run: npm ci
-      - run: npx cypress run
+      - run: npm run cy:run
         env:
           POLICE_TITLE: Cookie consent
           POLICE_TEXT: We use our own and third-party cookies to show you more relevant content based on your browsing and navigation history. Please accept or manage your cookie settings below. Here's our cookie policy
