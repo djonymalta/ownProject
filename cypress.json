@@ -1,0 +1,7 @@
+{
+
+"chromeWebSecurity": false,
+"baseUrl": "https://admin.typeform.com",
+"viewportWidth": 1336,
+"viewportHeight": 960
+}

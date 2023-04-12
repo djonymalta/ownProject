@@ -1,0 +1,26 @@
+{
+  "name": "ownproject",
+  "version": "1.0.0",
+  "description": "This project was created with the intention of presenting a little more about the tests carried out using the Cypress tool and Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djonymalta/ownProject.git"
+  },
+  "author": "DJONY MALTA KALFELTZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djonymalta/ownProject/issues"
+  },
+  "homepage": "https://github.com/djonymalta/ownProject#readme",
+  "devDependencies": {
+    "@types/faker": "^6.6.9",
+    "@types/node": "^18.15.11",
+    "cypress": "^9.7.0",
+    "faker": "^6.6.6",
+    "typescript": "^5.0.4"
+  }
+}
