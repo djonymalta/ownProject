@@ -1,4 +1,4 @@
-function close () {
+function closepopup () {
     const today = new Date;
 const COOKIE_VALUE = "ACCEPTED";
 
@@ -7,4 +7,4 @@ Cypress.on("window:before:load", window => {
 });
 }
 
-export { close }
+export { closepopup }

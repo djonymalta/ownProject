@@ -1,7 +1,8 @@
 {
+  "chromeWebSecurity": false,
+  "baseUrl": "https://admin.typeform.com",
+  "viewportWidth": 1336,
+  "viewportHeight": 960,
+  "testFiles": "./**/**/*.spec.ts"
 
-"chromeWebSecurity": false,
-"baseUrl": "https://admin.typeform.com",
-"viewportWidth": 1336,
-"viewportHeight": 960
 }
