@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-describe('Visit The Login Page and Find elementos to automation like: Texts, images, icons and others ', () => {
+    describe('Visit The Login Page and Find elementos to automation like: Texts, images, icons and others ', () => {
     before('Visit the Login Page', () => {
         cy.login()
     });
