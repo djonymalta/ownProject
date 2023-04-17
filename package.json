@@ -2,7 +2,7 @@
   "name": "ownproject",
   "version": "1.0.0",
   "description": "This project was created with the intention of presenting a little more about the tests carried out using the Cypress tool and Typescript",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "cy:run": "npx cypress run --headless --browser chrome --config defaultCommandTimeout=10000"
   },
